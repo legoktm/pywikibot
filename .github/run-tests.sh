@@ -1,4 +1,5 @@
 #!/bin/bash
+set -exo pipefail
 # When PYSETUP_TEST_EXTRAS is not enabled, do not allow the
 # default 'install' step to install all dependencies listed in
 # requirements.txt to verify that a minimal install works as expected.
