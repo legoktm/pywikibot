@@ -17,7 +17,7 @@ if [[ "$PYWIKIBOT_SITE_ONLY" == "1" ]]; then
   echo "Running site tests only code ${LANGUAGE} on family ${FAMILY}" ;
 fi
 
-export GITHUB_USER=`echo $TRAVIS_REPO_SLUG | cut -d '/' -f 1`
+export GITHUB_USER=`echo $GITHUB_REPOSITORY | cut -d '/' -f 1`
 mkdir ~/.python-eggs
 chmod 700 ~/.python-eggs
 
